@@ -11,14 +11,11 @@ return {
         "cssls",
         "cssmodules_ls",
         "unocss",
-        "eslint",
         "html",
-        "quick_lint_js",
         "tsserver",
         "prismals",
         "jedi_language_server",
         "tailwindcss",
-        "vtsls",
       },
     },
   },
@@ -27,7 +24,7 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      ensure_installed = { "prettier", "stylua" },
+      ensure_installed = { "prettier" },
     },
   },
   {
