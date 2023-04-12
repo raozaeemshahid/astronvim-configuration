@@ -10,4 +10,5 @@ return {
   --   end,
   -- },
   "wakatime/vim-wakatime",
+  "mattn/emmet-vim",
 }
