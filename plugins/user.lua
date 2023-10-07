@@ -11,4 +11,5 @@ return {
   -- },
   "wakatime/vim-wakatime",
   "mattn/emmet-vim",
+  "rust-lang/rust.vim",
 }
