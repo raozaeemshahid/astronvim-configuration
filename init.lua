@@ -19,6 +19,7 @@ return {
   -- Set colorscheme to use
   colorscheme = "astrodark",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
+  clipboard = "unnamedplus",
   diagnostics = {
     virtual_text = true,
     underline = true,
