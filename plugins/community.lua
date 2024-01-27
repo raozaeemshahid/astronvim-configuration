@@ -5,8 +5,8 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity.pack.rust" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.completion.codeium-vim" },
 
   { -- further customize the options set by the community
     "catppuccin",
@@ -25,23 +25,27 @@ return {
       },
     },
   },
-  { import = "astrocommunity.completion.copilot-lua" },
-  { -- further customize the options set by the community
-    "zbirenbaum/copilot.lua",
-    opts = {
-      suggestion = {
-        keymap = {
-          accept = "<C-l>",
-          accept_word = false,
-          accept_line = false,
-          next = "<C-.>",
-          prev = "<C-,>",
-          dismiss = "<C/>",
-        },
-      },
-    },
-  },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
+  {
+    "Exafunction/codeium.vim",
+    config = function()
+      -- Change '<C-g>' here to any keycode you like.
+      vim.keymap.set("i", "<C-g>", function() return vim.fn["codeium#Accept"]() end, { expr = true, silent = true })
+      vim.keymap.set(
+        "i",
+        "<c-l>",
+        function() return vim.fn["codeium#CycleCompletions"](1) end,
+        { expr = true, silent = true }
+      )
+      vim.keymap.set(
+        "i",
+        "<c-h>",
+        function() return vim.fn["codeium#CycleCompletions"](-1) end,
+        { expr = true, silent = true }
+      )
+      vim.keymap.set("i", "<c-x>", function() return vim.fn["codeium#Clear"]() end, { expr = true, silent = true })
+    end,
+  },
   {
     "m4xshen/smartcolumn.nvim",
     opts = {
