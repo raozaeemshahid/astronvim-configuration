@@ -10,7 +10,7 @@ return { -- use mason-lspconfig to configure LSP installations
         "cssmodules_ls",
         "unocss",
         "html",
-        "tsserver",
+        "vtsls",
         "prismals",
         "jedi_language_server",
         "tailwindcss",
