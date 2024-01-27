@@ -10,4 +10,13 @@ return { -- You can also add new plugins here as well:
     -- },
     "wakatime/vim-wakatime",
     "mattn/emmet-vim",
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        },
+    },
 }
