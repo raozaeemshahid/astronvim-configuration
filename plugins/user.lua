@@ -83,4 +83,8 @@ return { -- You can also add new plugins here as well:
       vim.o.mousemoveevent = true
     end,
   },
+  {
+    "cseickel/diagnostic-window.nvim",
+    dependencies = { "MunifTanjim/nui.nvim" },
+  },
 }
