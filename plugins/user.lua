@@ -63,4 +63,5 @@ return { -- You can also add new plugins here as well:
       },
     },
   },
+  "chrisbra/NrrwRgn",
 }
