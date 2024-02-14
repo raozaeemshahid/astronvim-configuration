@@ -31,16 +31,17 @@ return {
       "rcarriga/nvim-notify",
     },
   },
-  {
-    "pwntester/octo.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-      -- OR 'ibhagwan/fzf-lua',
-      "nvim-tree/nvim-web-devicons",
-    },
-    config = function() require("octo").setup() end,
-  },
+  -- INFO: octo was for managing github issues and pull requests, but I'm not using it
+  -- {
+  --   "pwntester/octo.nvim",
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-telescope/telescope.nvim",
+  --     -- OR 'ibhagwan/fzf-lua',
+  --     "nvim-tree/nvim-web-devicons",
+  --   },
+  --   config = function() require("octo").setup() end,
+  -- },
   -- Autocompletion
   { "hrsh7th/nvim-cmp" }, -- Required
   { "hrsh7th/cmp-nvim-lsp" }, -- Required
