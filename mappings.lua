@@ -31,11 +31,9 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>gn"] = {
-      function()
-        utils.toggle_term_cmd("lazynpm ")
-      end,
+      function() utils.toggle_term_cmd "lazynpm " end,
       desc = "ToggleTerm lazygit",
-    }
+    },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
