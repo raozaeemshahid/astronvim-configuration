@@ -4,7 +4,6 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 local utils = require "astronvim.utils"
-local vim = require "vim"
 return {
   -- first key is the mode
   n = {
