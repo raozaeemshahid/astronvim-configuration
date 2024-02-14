@@ -12,7 +12,6 @@ return {
         "cssmodules_ls",
         "unocss",
         "html",
-        "vtsls",
         "prismals",
         "jedi_language_server",
         "tailwindcss",
