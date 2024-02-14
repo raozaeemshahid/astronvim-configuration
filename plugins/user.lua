@@ -52,10 +52,6 @@ return {
   { "hrsh7th/cmp-cmdline" },
   { "saadparwaiz1/cmp_luasnip" },
   {
-    "cseickel/diagnostic-window.nvim",
-    dependencies = { "MunifTanjim/nui.nvim" },
-  },
-  {
     "OlegGulevskyy/better-ts-errors.nvim",
     dependencies = { "MunifTanjim/nui.nvim" },
     config = {

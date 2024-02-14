@@ -20,8 +20,6 @@ return {
       desc = "Previous buffer",
     },
 
-    -- mappings seen under group name "Buffer"
-    ["S"] = {"<cmd>DiagWindowShow<cr>", desc = "Toggle diagnostics window"},
     ["<leader>bD"] = {
       function()
         require("astronvim.utils.status").heirline.buffer_picker(
