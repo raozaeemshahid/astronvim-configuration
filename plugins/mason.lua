@@ -15,6 +15,7 @@ return {
         "prismals",
         "jedi_language_server",
         "tailwindcss",
+        "clangd",
       })
     end,
   },
