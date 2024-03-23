@@ -16,6 +16,8 @@ return {
         "jedi_language_server",
         "tailwindcss",
         "clangd",
+        "docker_compose_language_service",
+        "dockerls",
       })
     end,
   },
